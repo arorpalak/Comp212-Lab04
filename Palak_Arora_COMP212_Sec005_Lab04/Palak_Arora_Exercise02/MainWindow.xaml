@@ -1,0 +1,38 @@
+﻿<Window x:Class="Palak_Arora_Exercise02.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Palak_Arora_Exercise02"
+        mc:Ignorable="d"
+           Title="Dental Payment System" Height="400" Width="600" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Label Content="Dental Payment System" HorizontalAlignment="Left" Margin="124,10,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Bold"/>
+        <Label Content="Name of Patient:" HorizontalAlignment="Left" Margin="19,62,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Address:" HorizontalAlignment="Left" Margin="65,116,0,0" VerticalAlignment="Top" FontWeight="Bold" RenderTransformOrigin="0.639,0.971"/>
+        <TextBox x:Name="PatientNameTextBox" HorizontalAlignment="Left" Height="23" Margin="129,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266"/>
+        <TextBox x:Name="AddressTextBox" HorizontalAlignment="Left" Height="23" Margin="129,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266"/>
+        <Label Content="Dental Services Available" HorizontalAlignment="Left" Margin="424,54,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <CheckBox x:Name="FlossingCheckBox" Content="Flossing" HorizontalAlignment="Left" Margin="424,91,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <CheckBox x:Name="FillingCheckBox" Content="Filling" HorizontalAlignment="Left" Margin="424,122,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <CheckBox x:Name="RootCanalCheckBox" Content="Root Canal" HorizontalAlignment="Left" Margin="424,153,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="$20.00" HorizontalAlignment="Left" Margin="530,85,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.398,-0.073"/>
+        <Label Content="$75.00" HorizontalAlignment="Left" Margin="530,116,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.449,-0.112"/>
+        <Label Content="$150.00" HorizontalAlignment="Left" Margin="524,147,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.022,0.428"/>
+        <RadioButton x:Name="SeniorRadioButton" Content="Senior" HorizontalAlignment="Left" Margin="125,207,0,0" VerticalAlignment="Top" GroupName="AgeGroup"/>
+        <RadioButton x:Name="KidsRadioButton" Content="Kids and Youth" HorizontalAlignment="Left" Margin="221,207,0,0" VerticalAlignment="Top" GroupName="AgeGroup"/>
+        <RadioButton x:Name="AdultRadioButton" Content="Adult" HorizontalAlignment="Left" Margin="343,207,0,0" VerticalAlignment="Top" GroupName="AgeGroup" RenderTransformOrigin="0.496,0.698"/>
+        <TextBlock x:Name="OutputTextBlock" HorizontalAlignment="Left" Margin="124,237,0,0" TextWrapping="Wrap" Text="Payment details" VerticalAlignment="Top" RenderTransformOrigin="-0.327,-2.196" Width="266" Height="111"/>
+        <Button x:Name="CalculateButton" Content="Calculate" HorizontalAlignment="Left" Margin="424,192,0,0" VerticalAlignment="Top" Width="145" Height="44" Click="CalculateButton_Click"/>
+        <Label Content="Output:" HorizontalAlignment="Left" Margin="65,232,0,0" VerticalAlignment="Top" FontWeight="Bold" RenderTransformOrigin="0.639,0.971"/>
+        <ComboBox x:Name="ProvinceComboBox" HorizontalAlignment="Left" Margin="129,174,0,0" VerticalAlignment="Top" Width="266">
+            <ComboBoxItem Content="--Select--" IsSelected="True"/>
+            <ComboBoxItem Content="Alberta"/>
+            <ComboBoxItem Content="Ontario"/>
+            <ComboBoxItem Content="Quebec"/>
+        </ComboBox>
+        <Label Content="Province:" HorizontalAlignment="Left" Margin="61,172,0,0" VerticalAlignment="Top" FontWeight="Bold" RenderTransformOrigin="0.639,0.971"/>
+
+    </Grid>
+</Window>
